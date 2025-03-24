@@ -1,0 +1,27 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+    padding-top: 100px; 
+}
+ .active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    border-radius: 9999px;
+}
+
+.visited {
+    color: #c26d06 !important;
+    font-weight: bold;
+    background-color: transparent !important; 
+}
+
+.service-link:hover {
+    background-color: #c26d06 !important;
+    color: white !important;
+        }

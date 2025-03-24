@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <nav class="bg-[#c26d06] p-4 shadow-md flex justify-between items-center fixed top-0 left-0 w-full z-50">
+        <div class="flex items-center space-x-4">
+            <img src="penguin_logo.png" alt="Company Logo" class="h-16 w-16 rounded-full">
+            <div>
+                <h2 class="text-white font-bold text-lg">Penguin Sales & Services Company</h2>
+                <div class="text-white italic text-sm">We Make It Happen.</div>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <input type="text" id="search" placeholder="Search..." class="px-4 py-2 w-64 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-white text-black">
+            <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <ul class="flex items-center space-x-6">
+            <li>
+                <a href="index.html" class="nav-link text-white font-bold px-4 py-2 relative active">Home</a>
+            </li>
+            <li class="relative">
+                <button onclick="toggleDropdown()" class="text-white font-bold px-4 py-2 flex items-center">Services <i class="fa-solid fa-caret-down ml-2"></i></button>
+                <div id="dropdown-menu" class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md hidden">
+                    <a href="bridal-car-services.html" class="block px-4 py-2 hover:bg-[#c26d06]">Bridal Car Services</a>
+                    <a href="towing-services.html" class="block px-4 py-2 hover:bg-[#c26d06]">Towing Services 24/7</a>
+                    <a href="trucking-services.html" class="block px-4 py-2 hover:bg-[#c26d06]">Trucking Services</a>
+                    <a href="heavy-equipment-rental.html" class="block px-4 py-2 hover:bg-[#c26d06]">Heavy Equipment Rental</a>
+                    <a href="general-construction-maintenance-services.html" class="block px-4 py-2 hover:bg-[#c26d06]">General Construction & Maintenance Services</a>
+                    <a href="furniture-hotel-residential.html" class="block px-4 py-2 hover:bg-[#c26d06]">Furniture Hotel & Residential</a>
+                    <a href="auto-parts.html" class="block px-4 py-2 hover:bg-[#c26d06]">Auto Parts</a>
+                </div>
+            </li>
+            <li>
+                <a href="contact-us.html" class="nav-link text-white font-bold px-4 py-2 relative active">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="container mt-10 p-6 bg-gray-100 rounded-lg shadow-md w-full flex flex-col items-center">
+        <div class="text-center w-full">
+            <h2 class="text-3xl font-bold text-[#c26d06] mb-2">Contact Us</h2>
+            <hr class="border-t-2 border-[#c26d06] w-1/4 mx-auto mb-6">
+            <p class="text-gray-700 mt-2">Get in touch with us for any inquiries or assistance.</p>
+        </div>
+    
+        <div class="mt-6 flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-4xl">
+            <div class="w-full md:w-1/2 text-center md:text-left px-6">
+                <p class="text-lg text-gray-800 font-semibold"><i class="fas fa-envelope text-blue-600"></i> E-Mail:</p>
+                <p class="text-gray-700">info.qpssco@gmail.com</p>
+    
+                <p class="text-lg text-gray-800 font-semibold mt-4"><i class="fas fa-mobile-alt text-green-600"></i> Mobile No.:</p>
+                <p class="text-gray-700">(0925) 551 0987</p>
+    
+                <p class="text-lg text-gray-800 font-semibold mt-4"><i class="fas fa-phone-alt text-red-600"></i> Landline No.:</p>
+                <p class="text-gray-700">(046) 230 1426</p>
+            </div>
+    
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="contactus.jpg" alt="Contact Us" class="w-full max-w-sm h-auto object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+        
+    
+    <footer class="bg-[#c26d06] text-white py-4 fixed bottom-0 w-full">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Penguin Sales & Services Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
