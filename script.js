@@ -41,3 +41,15 @@ AOS.init();
  function toggleDropdown() {
      document.getElementById("dropdown-menu").classList.toggle("hidden");
         }
+
+ const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+    
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown-menu");
+            dropdown.classList.toggle("hidden");
+        }
