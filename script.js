@@ -1,3 +1,4 @@
+// Function to handle dropdown toggle
 function toggleDropdown() {
     let dropdownMenu = document.getElementById("dropdown-menu");
     let icon = document.getElementById("dropdown-icon");
